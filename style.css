@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d5ffa2, #fff);
+    background-color: #fff;
+    background-repeat: no-repeat;
+}
+
+.stupid-things {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stupid-things > div {
+    text-align: center;
+    outline: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    min-width: 300px;
+    background-color: white;
+}
+
+.stupid-things > div img {
+    width: 200px;
+}
+
+.stupid-things > div h2 {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 445px) {
+    .stupid-things > div {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid #ccc;
+    background: linear-gradient(to bottom, #ddd, #eee);
+}
+
+.redb {
+    background: linear-gradient(to bottom, #ff9e9e, #ffdfdf);
+}
