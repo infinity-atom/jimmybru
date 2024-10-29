@@ -31,7 +31,7 @@
         DSLR Camera
       </ObjectCard>
       <ObjectCard :img-url="FilmCamera">
-        Film Camera
+        Film Camera <small>(x2)</small>
       </ObjectCard>
       <ObjectCard :img-url="FilmRoll">
         5mm Film Roll
