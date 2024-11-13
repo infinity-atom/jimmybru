@@ -8,14 +8,46 @@
   import FilmRoll from "./assets/Film.jpg";
   import FilmCamera from "./assets/FilmCam.jpg";
   import TelloDrone from "./assets/Tello.jpg";
+  import Speaker from "./assets/Speaker.jpg";
 </script>
 
 <template>
   <div class="main">
-    <Card style="width: fit-content; font-size: 16pt; text-align: center;">
-      <h1 style="font-size: 54pt; font-weight: 200;">This website is not available at the moment.</h1>
-      This website was created by infinity-atom.<br>
-      Email domains.jameswhyyougottakeepbringingrandomstufftoschool.lol@infinity-atom.org for help, concerns, or questions. 
+    <Card style="text-align: center; margin-bottom: 10px;">
+      <span style="font-size: 20pt; font-weight: bold;">James, why you gotta keep bringing random stuff to school?</span><br>
+      <span style="font-size: 14pt">Don't you realize that what you're doing is really pointless?</span>
+    </Card>
+    <Card style="margin-bottom: 10px;">
+      This is the stuff you've brought to school, for some reason.
+    </Card>
+
+    <div class="grid">
+      <ObjectCard :img-url="CassettePlayer">
+        Cassette Player
+      </ObjectCard>
+      <ObjectCard :img-url="DisposableCamera">
+        Disposable Camera <small>(x2)</small>
+      </ObjectCard>
+      <ObjectCard :img-url="DSLRCamera">
+        DSLR Camera <small>(x2)</small>
+      </ObjectCard>
+      <ObjectCard :img-url="FilmCamera">
+        Film Camera <small>(x2)</small>
+      </ObjectCard>
+      <ObjectCard :img-url="FilmRoll">
+        5mm Film Roll <small>(x2)</small>
+      </ObjectCard>
+      <ObjectCard :img-url="TelloDrone">
+        Tello Drone
+      </ObjectCard>
+      <ObjectCard :img-url="Speaker">
+        Bluetooth Speaker
+      </ObjectCard>
+    </div>
+
+    <Card>
+      This website was created by <a style="color: white;" href="https://infinity-atom.org">infinity-atom</a>.<br>
+      Email <a style="color: white;" href="mailto:domains.jameswhyyougottakeepbringingrandomstufftoschool.lol@infinity-atom.org">domains.jameswhyyougottakeepbringingrandomstufftoschool.lol@infinity-atom.org</a> for help, concerns, or questions.
     </Card>
   </div>
 </template>
@@ -23,12 +55,6 @@
 <style scoped>
   .main {
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-    box-sizing: border-box;
   }
 
   .grid {
