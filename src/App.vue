@@ -26,7 +26,7 @@
         Cassette Player
       </ObjectCard>
       <ObjectCard :img-url="DisposableCamera">
-        Disposable Camera
+        Disposable Camera <small>(x2)</small>
       </ObjectCard>
       <ObjectCard :img-url="DSLRCamera">
         DSLR Camera <small>(x2)</small>
