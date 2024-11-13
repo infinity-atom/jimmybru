@@ -8,6 +8,7 @@
   import FilmRoll from "./assets/Film.jpg";
   import FilmCamera from "./assets/FilmCam.jpg";
   import TelloDrone from "./assets/Tello.jpg";
+  import Speaker from "./assets/Speaker.jpg";
 </script>
 
 <template>
@@ -28,16 +29,19 @@
         Disposable Camera
       </ObjectCard>
       <ObjectCard :img-url="DSLRCamera">
-        DSLR Camera
+        DSLR Camera <small>(x2)</small>
       </ObjectCard>
       <ObjectCard :img-url="FilmCamera">
         Film Camera <small>(x2)</small>
       </ObjectCard>
       <ObjectCard :img-url="FilmRoll">
-        5mm Film Roll
+        5mm Film Roll <small>(x2)</small>
       </ObjectCard>
       <ObjectCard :img-url="TelloDrone">
         Tello Drone
+      </ObjectCard>
+      <ObjectCard :img-url="Speaker">
+        Bluetooth Speaker
       </ObjectCard>
     </div>
 
